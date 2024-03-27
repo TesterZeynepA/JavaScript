@@ -124,3 +124,91 @@ const fonk = function(sayi4) {
     console.log(negatif);
 };
 fonk(3);
+
+//homework-2
+let taban= prompt("taban degerini giriniz: ");
+let yukseklik= prompt("yükseklik degerini giriniz: ");
+const ucgenAlani=  (taban, yukseklik)=>{
+    console.log((taban*yukseklik)/2);
+};
+ucgenAlani(taban, yukseklik);
+
+//homework-3
+
+let rakam = prompt("Sayıyı giriniz: ");
+let usSayisi = prompt("Ussu giriniz: ");
+const kareAl=  (rakam)=>{
+    console.log(rakam**2);
+};const kupAl=  (rakam)=>{
+    console.log(rakam**3);
+};const usAl=  (rakam, usSayisi)=>{
+    console.log(Math.pow(rakam, usSayisi));
+};
+
+kareAl(rakam);
+kupAl(rakam);
+usAl(rakam, usSayisi);
+
+//homework-4
+let yil = (prompt("Yıl giriniz:"));
+
+const artikYilMi = function(yil) {
+    return (yil % 4 === 0 && yil % 100 !== 0) || (yil % 400 === 0);
+};
+
+if (artikYilMi(yil)) {
+    console.log(yil + " artık yıldır.");
+} else {
+    console.log(yil + " artık yıl değildir.");
+}
+
+//Diziler
+//1. yöntem
+
+const arabalar = ["Mercedes", "Ferrari", "Bmw", "Volvo"];
+
+//2. yöntem
+
+const gunler = new Array (
+    "Pazartesi",
+    "Salı",
+    "Cärramba",
+    "Perşembe",
+    "Cuma",
+    "Cumartesi",
+    "Pazar"
+);
+
+console.log("Arabalar : ", arabalar);
+console.log("ilk araba : ", arabalar[0]);
+console.log("Son araba : ", arabalar[arabalar.length-1]);
+
+arabalar[0]= "Renault";
+console.log("yeni arabalar: ", arabalar);
+
+//Error
+//arabalar = ["Opel", "Mazda", "Nissan"];
+//console.log("arabalar: ", arabalar);
+
+const newDizi = ["ABC", 12, true, NaN, arabalar];
+console.log("newDizi: ", newDizi);
+
+const meyveler = ["Elma", "Armut", "Muz", "Kivi", "Cilek"];
+
+const konsol = () => console.log(meyveler);
+
+
+console.log(meyveler.pop());
+konsol();
+
+console.log(meyveler.push("Karpuz"));
+konsol();
+
+console.log(meyveler.shift());
+konsol();
+
+console.log(meyveler.unshift("Cilek"));
+konsol();
+
+console.log(meyveler.reverse());
+konsol();
